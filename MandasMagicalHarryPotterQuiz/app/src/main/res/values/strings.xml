@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Mandas Magical Harry Potter Quiz</string>
+
+    <string name="welcome_statement">Welcome to Manda\'s Magical Harry Potter Quiz! Gear up those brains to answer these (fairly easy) questions!</string>
+    <string name="image_desc">Hogwarts Houses Image</string>
+    <!-- String Variables for First Question -->
+    <string name="first_q">Question 1: Which Hogwarts house does Professor Albus Dumbledore belong to?</string>
+    <string name="first_q_choice_one">Slytherin</string>
+    <string name="first_q_choice_two">Ravenclaw</string>
+    <string name="first_q_choice_three">Gryffindor</string>
+    <string name="first_q_choice_four">Hufflepuff</string>
+
+    <!-- String Variables for Second Question -->
+    <string name="second_q">Question 2: Which of the following Weasley children are twins?</string>
+    <string name="second_q_choice_one">Bill</string>
+    <string name="second_q_choice_two">Fred</string>
+    <string name="second_q_choice_three">Ron</string>
+    <string name="second_q_choice_four">Charlie</string>
+    <string name="second_q_choice_five">George</string>
+    <string name="second_q_choice_six">Ginny</string>
+
+    <!-- String Variables for Third Question -->
+    <string name="third_q">Question 3: What is the full name of Ron\'s pet owl (given to him by Sirius Black)?</string>
+    <string name="third_q_hint">Begin Typing Answer Here...</string>
+
+    <!-- String Variables for Fourth Question -->
+    <string name="fourth_q">Question 4: Who dies by the end of Book Seven?</string>
+    <string name="fourth_q_choice_one">Sirius Black</string>
+    <string name="fourth_q_choice_two">Remus Lupin</string>
+    <string name="fourth_q_choice_three">Severus Snape</string>
+    <string name="fourth_q_choice_four">Albus Dumbledore</string>
+
+    <!-- String Variables for Fifth Question -->
+    <string name="fifth_q">Question 5: Which of the following is the patronus of Hermione Granger?</string>
+    <string name="fifth_q_choice_one">Badger</string>
+    <string name="fifth_q_choice_two">Rabbit</string>
+    <string name="fifth_q_choice_three">The Incredibly Deadly Viper</string>
+    <string name="fifth_q_choice_four">Otter</string>
+
+    <!-- Submit Button -->
+    <string name="submit_button">Submit</string>
+
+    <string name="correct">Correct!</string>
+    <string name="close_incorrect">Close, but Incorrect!</string>
+    <string name="incorrect">Incorrect!</string>
+
+</resources>

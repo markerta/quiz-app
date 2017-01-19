@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.mandasmagicalharrypotterquiz.MainActivity"
+    android:id="@+id/scroll_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hogwarts_image"
+            android:contentDescription="@string/image_desc"/>
+
+        <!-- Welcome Statement -->
+        <TextView
+            style="@style/WelcomeStatementStyle"
+            android:text="@string/welcome_statement"/>
+
+        <!-- Question One -->
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/first_q"/>
+        <!-- Question One Answer Choices in Radio Button form -->
+        <RadioGroup
+            style="@style/LayoutRadioButtonStyle"
+            android:orientation="vertical">
+            <!-- Radio Buttons for Question One -->
+            <RadioButton
+                android:id="@+id/first_q_wrong_one"
+                style="@style/RadioButtonStyle"
+                android:text="@string/first_q_choice_one"/>
+            <RadioButton
+                android:id="@+id/first_q_wrong_two"
+                style="@style/RadioButtonStyle"
+                android:text="@string/first_q_choice_two"/>
+            <!-- Correct Answer -->
+            <RadioButton
+                android:id="@+id/first_q_correct"
+                style="@style/RadioButtonStyle"
+                android:text="@string/first_q_choice_three"/>
+            <RadioButton
+                android:id="@+id/first_q_wrong_three"
+                style="@style/RadioButtonStyle"
+                android:text="@string/first_q_choice_four"/>
+        </RadioGroup>
+        <!-- Question One Blank TextView to later display Correct Answer -->
+        <TextView
+            android:id="@+id/first_q_text"
+            style="@style/AnswerStyle"/>
+
+
+        <!-- Question Two -->
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/second_q"/>
+        <!-- Question Two Answer Choices in CheckBox form -->
+        <LinearLayout
+            style="@style/LayoutCheckBoxStyle"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/second_q_wrong_one"
+                style="@style/CheckBoxStyle"
+                android:text="@string/second_q_choice_one" />
+            <CheckBox
+                android:id="@+id/second_q_wrong_two"
+                style="@style/CheckBoxStyle"
+                android:text="@string/second_q_choice_four" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LayoutCheckBoxStyle"
+            android:orientation="horizontal">
+            <!-- Correct Answer -->
+            <CheckBox
+                android:id="@+id/second_q_correct_one"
+                style="@style/CheckBoxStyle"
+                android:text="@string/second_q_choice_two" />
+            <!-- Correct Answer -->
+            <CheckBox
+                android:id="@+id/second_q_correct_two"
+                style="@style/CheckBoxStyle"
+                android:text="@string/second_q_choice_five" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LayoutCheckBoxStyle"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/second_q_wrong_three"
+                style="@style/CheckBoxStyle"
+                android:text="@string/second_q_choice_three" />
+            <CheckBox
+                android:id="@+id/second_q_wrong_four"
+                style="@style/CheckBoxStyle"
+                android:text="@string/second_q_choice_six" />
+        </LinearLayout>
+        <!-- Question Two Blank TextView to later display Correct Answer -->
+        <TextView
+            android:id="@+id/second_q_text"
+            style="@style/AnswerStyle"/>
+
+        <!-- Question Three -->
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/third_q"/>
+
+        <!-- Question Three Answers Text Box -->
+        <EditText
+            android:id="@+id/third_q_correct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="@string/third_q_hint"/>
+        <!-- Question Three Blank TextView to later display Correct Answer -->
+        <TextView
+            android:id="@+id/third_q_text"
+            style="@style/AnswerStyle"/>
+
+        <!-- Question Four -->
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/fourth_q"/>
+        <!-- Question Four Answer Choices in CheckBox form -->
+        <LinearLayout
+            style="@style/LayoutCheckBoxStyle"
+            android:orientation="horizontal">
+            <!-- Correct Answer -->
+            <CheckBox
+                android:id="@+id/fourth_q_correct_one"
+                style="@style/CheckBoxStyle"
+                android:text="@string/fourth_q_choice_one" />
+            <!-- Correct Answer -->
+            <CheckBox
+                android:id="@+id/fourth_q_correct_two"
+                style="@style/CheckBoxStyle"
+                android:text="@string/fourth_q_choice_three" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LayoutCheckBoxStyle"
+            android:orientation="horizontal">
+            <!-- Correct Answer -->
+            <CheckBox
+                android:id="@+id/fourth_q_correct_three"
+                style="@style/CheckBoxStyle"
+                android:text="@string/fourth_q_choice_two" />
+            <!-- Correct Answer -->
+            <CheckBox
+                android:id="@+id/fourth_q_correct_four"
+                style="@style/CheckBoxStyle"
+                android:text="@string/fourth_q_choice_four" />
+        </LinearLayout>
+        <!-- Question Four Blank TextView to later display Correct Answer -->
+        <TextView
+            android:id="@+id/fourth_q_text"
+            style="@style/AnswerStyle"/>
+
+        <!-- Question Five -->
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/fifth_q"/>
+        <!-- Question Five Answer Choices in Radio Button form -->
+        <RadioGroup
+            style="@style/LayoutRadioButtonStyle"
+            android:orientation="vertical">
+            <!-- Radio Buttons for Question One -->
+            <RadioButton
+                android:id="@+id/fifth_q_wrong_one"
+                style="@style/RadioButtonStyle"
+                android:text="@string/fifth_q_choice_one"/>
+            <RadioButton
+                android:id="@+id/fifth_q_wrong_two"
+                style="@style/RadioButtonStyle"
+                android:text="@string/fifth_q_choice_two"/>
+            <RadioButton
+                android:id="@+id/fifth_q_wrong_three"
+                style="@style/RadioButtonStyle"
+                android:text="@string/fifth_q_choice_three"/>
+            <!-- Correct Answer -->
+            <RadioButton
+                android:id="@+id/fifth_q_correct"
+                style="@style/RadioButtonStyle"
+                android:text="@string/fifth_q_choice_four"/>
+        </RadioGroup>
+        <!-- Question Five Blank TextView to later display Correct Answer -->
+        <TextView
+            android:id="@+id/fifth_q_text"
+            style="@style/AnswerStyle"/>
+
+        <!-- Submit Button -->
+        <Button
+            style="@style/SubmitButtonStyle"
+            android:text="@string/submit_button"
+            android:onClick="submitAnswers"/>
+    </LinearLayout>
+</ScrollView>
